@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.justdial.com)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(npx --yes create-next-app@latest web --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-eslint --use-npm --turbo --yes)",
+      "Bash(npm run *)",
+      "Bash(echo \"Started in background, PID $!\")",
+      "Bash(curl -s -o /tmp/home.html -w \"HOME: %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /tmp/services.html -w \"SERVICES: %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:3000/services)",
+      "Bash(curl -s -o /tmp/portfolio.html -w \"PORTFOLIO: %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:3000/portfolio)",
+      "Bash(curl -s -o /tmp/process.html -w \"PROCESS: %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:3000/process)",
+      "Bash(curl -s -o /tmp/about.html -w \"ABOUT: %{http_code} \\(%{size_download} bytes\\)\\\\n\" http://localhost:3000/about)",
+      "Bash(curl -s -X POST http://localhost:3000/api/lead -H \"Content-Type: application/json\" -d '{\"source\":\"test\",\"name\":\"Test Akash\",\"phone\":\"9999999999\",\"email\":\"a@b.com\",\"bhk\":\"2BHK\",\"area\":\"1100\",\"city\":\"Kolkata\",\"message\":\"smoke test\"}')",
+      "Read(//tmp/**)",
+      "Bash(start \"\" \"http://localhost:3000\")",
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(mkdir -p \"/tmp/design-pkg\")",
+      "Bash(gunzip -c C:/Users/akash/.claude/projects/C--Users-akash-coding-Claude-Code-Home-Design-Studio-Interior-Website/8508c9f9-9969-4299-ad16-5bb97780a89e/tool-results/webfetch-1777796460952-z4aqri.bin)",
+      "Bash(tar -tf \"/tmp/design-pkg/contents.tar\")",
+      "Bash(tar -xf contents.tar)",
+      "Bash(curl -s -o /dev/null -w \"HOME: %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"SERVICES: %{http_code}\\\\n\" http://localhost:3000/services)",
+      "Bash(curl -s -o /dev/null -w \"PROCESS: %{http_code}\\\\n\" http://localhost:3000/process)",
+      "Bash(curl -s -o /dev/null -w \"PORTFOLIO: %{http_code}\\\\n\" http://localhost:3000/portfolio)",
+      "Bash(curl -s -o /dev/null -w \"ABOUT: %{http_code}\\\\n\" http://localhost:3000/about)",
+      "Bash(curl -s http://localhost:3000/services)",
+      "Bash(curl -s http://localhost:3000/process)",
+      "Bash(curl -s http://localhost:3000/contact)"
+    ]
+  }
+}
