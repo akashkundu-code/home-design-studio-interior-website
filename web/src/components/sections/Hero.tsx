@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section style={{ position: "relative", height: "min(90vh, 880px)", minHeight: 600, overflow: "hidden", background: "linear-gradient(135deg, #f7f3ec 0%, #efe7d8 50%, #e7dcc7 100%)" }}>
+    <section style={{ position: "relative", height: "min(90vh, 880px)", minHeight: 600, overflow: "hidden", backgroundImage: "url('/hero-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(247,243,236,.0) 0%, rgba(20,15,8,.12) 50%, rgba(20,15,8,.4) 100%)" }} />
       <div className="container" style={{ position: "relative", height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", textAlign: "center", paddingBottom: 80, paddingTop: 60, zIndex: 10 }}>
         <div style={{ maxWidth: 880, color: "#fbf8f2" }}>
