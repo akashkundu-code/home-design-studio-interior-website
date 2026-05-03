@@ -1,13 +1,10 @@
 import Link from "next/link";
-import RoomScene from "../RoomScene";
 
 export default function Hero() {
   return (
-    <section style={{ position: "relative", height: "min(90vh, 880px)", minHeight: 600, overflow: "hidden" }}>
+    <section style={{ position: "relative", height: "min(90vh, 880px)", minHeight: 600, overflow: "hidden", background: "linear-gradient(135deg, #f7f3ec 0%, #efe7d8 50%, #e7dcc7 100%)" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(247,243,236,.0) 0%, rgba(20,15,8,.12) 50%, rgba(20,15,8,.4) 100%)" }} />
       <div style={{ position: "absolute", inset: 0 }}>
-        <RoomScene kind="living" tone="warm" />
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(247,243,236,.0) 0%, rgba(20,15,8,.18) 50%, rgba(20,15,8,.55) 100%)" }} />
-      </div>
       <div className="container" style={{ position: "relative", height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", textAlign: "center", paddingBottom: 80, paddingTop: 60 }}>
         <div style={{ maxWidth: 880, color: "#fbf8f2" }}>
           <div className="kicker fadeup" style={{ color: "rgba(251,248,242,.85)", marginBottom: 28 }}>
