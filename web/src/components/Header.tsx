@@ -74,25 +74,6 @@ export default function Header() {
           </a>
         </nav>
       </div>
-      <a
-        href={`tel:+91${SITE.phones[0]}`}
-        style={{
-          position: "fixed",
-          top: 88,
-          right: 16,
-          fontSize: 11,
-          letterSpacing: ".12em",
-          color: "var(--ink-2)",
-          textDecoration: "none",
-          background: "var(--paper)",
-          padding: "6px 12px",
-          border: "1px solid var(--line)",
-          borderRadius: 100,
-          zIndex: 49,
-        }}
-      >
-        ☎ +91 {SITE.phones[0]}
-      </a>
     </header>
   );
 }
